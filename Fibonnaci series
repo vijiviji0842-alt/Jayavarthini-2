@@ -1,0 +1,43 @@
+n = int(input("Enter how many terms: "))   # number of terms
+a, b = 0, 1                                # first two numbers
+
+for i in range(n):  
+    print(a, end=" ")   # print current number
+    c = a + b           # next number = sum of previous two
+    a = b               # shift 'a' to 'b'
+    b = c               # shift 'b' to next
+ Run for n = 10
+ Start: a=0, b=1
+Loop 1 (i=0):
+print(0), c=0+1=1, a=1, b=1
+
+Loop 2 (i=1):
+print(1), c=1+1=2, a=1, b=2
+
+Loop 3 (i=2):
+print(1), c=1+2=3, a=2, b=3
+
+Loop 4 (i=3):
+print(2), c=2+3=5, a=3, b=5
+
+Loop 5 (i=4):
+print(3), c=3+5=8, a=5, b=8
+
+Loop 6 (i=5):
+print(5), c=5+8=13, a=8, b=13
+
+Loop 7 (i=6):
+print(8), c=8+13=21, a=13, b=21
+
+Loop 8 (i=7):
+print(13), c=13+21=34, a=21, b=34
+
+Loop 9 (i=8):
+print(21), c=21+34=55, a=34, b=55
+
+Loop 10 (i=9):
+print(34), c=34+55=89, a=55, b=89
+
+
+ Final Output (n=10):
+0 1 1 2 3 5 8 13 21 34
