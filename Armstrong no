@@ -1,0 +1,45 @@
+num = int(input("Enter a number: "))  # Example: 153
+temp = num  # Copy of number
+sum = 0
+
+print(f"\nInitial values: num = {num}, temp = {temp}, sum = {sum}\n")
+
+# Loop for each digit
+i = 1
+while temp > 0:
+    digit = temp % 10
+    sum = sum + digit * digit * digit
+    print(f"Loop {i}:")
+    print(f"  digit = {temp} % 10 = {digit}")
+    print(f"  sum = {sum}")
+    temp = temp // 10
+    print(f"  temp = {temp}\n")
+    i += 1
+
+# Final check
+print(f"Final: num = {num}, sum = {sum}")
+if num == sum:
+    print(" Armstrong number")
+else:
+    print("Not an Armstrong number")
+Enter a number: 153
+
+Initial values: num = 153, temp = 153, sum = 0
+
+Loop 1:
+  digit = 153 % 10 = 3
+  sum = 0 + 3^3 = 27
+  temp = 15
+
+Loop 2:
+  digit = 15 % 10 = 5
+  sum = 27 + 5^3 = 152
+  temp = 1
+
+Loop 3:
+  digit = 1 % 10 = 1
+  sum = 152 + 1^3 = 153
+  temp = 0
+
+Final: num = 153, sum = 153
+ 
