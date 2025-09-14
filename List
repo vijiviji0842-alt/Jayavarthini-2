@@ -1,0 +1,12 @@
+list1=['java','Python','programming','c++']
+print (len(list1))
+print(list1.count('java'))
+list1.reverse()
+print (list1)
+list2=list1.copy()
+print(list2)
+output
+4
+1
+['c++', 'programming', 'Python', 'java']
+['c++', 'programming', 'Python', 'java']
